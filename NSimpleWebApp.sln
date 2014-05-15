@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSimpleWebAppUI", "NSimpleW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSimpleWebAppHttpHandler", "NSimpleWebAppHttpHandler\NSimpleWebAppHttpHandler.csproj", "{5E74BF45-E750-4F34-A189-6B2846D21A0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSimpleWebAppServer", "NSimpleWebAppServer\NSimpleWebAppServer.csproj", "{010DD05D-4134-4E75-95CB-4E424D6CC3B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssueModule", "IssueModule\IssueModule.csproj", "{010DD05D-4134-4E75-95CB-4E424D6CC3B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

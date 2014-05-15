@@ -57,6 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lib\bootstrap\3.1.1\css\bootstrap-theme.css.map" />
+    <Content Include="lib\bootstrap\3.1.1\css\bootstrap.css.map" />
+    <Content Include="lib\bootstrap\3.1.1\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\3.1.1\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap\3.1.1\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,15 +70,45 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="lib\angular\angular-resource\angular-resource.js" />
+    <Content Include="lib\angular\angular-route\angular-route.js" />
+    <Content Include="lib\angular\angular-route\angular-route.min.js" />
+    <Content Include="lib\angular\angular-ui\ui-utils.js" />
+    <Content Include="lib\angular\angular.js" />
+    <Content Include="lib\angular\angular.min.js" />
+    <Content Include="lib\angular\ui-bootstrap-tpls-0.10.0.js" />
+    <Content Include="lib\angular\ui-bootstrap-tpls-0.10.0.min.js" />
+    <Content Include="lib\bootstrap\3.1.1\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap\3.1.1\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap\3.1.1\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\3.1.1\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\3.1.1\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\3.1.1\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\3.1.1\js\bootstrap.min.js" />
+    <Content Include="lib\jquery\1.11.1\jquery.js" />
+    <Content Include="lib\requirejs\2.1.11\require-min.js" />
+    <Content Include="lib\requirejs\2.1.11\require.js" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\applicationWideScriptExample.js" />
+    <Content Include="scripts\dependencyResolverFor.js" />
+    <Content Include="scripts\pages\page1\page1Controller.js" />
+    <Content Include="scripts\pages\page1\serverCommunicator.js" />
+    <Content Include="scripts\pages\page2\page2Controller.js" />
+    <Content Include="scripts\routes.js" />
+    <Content Include="scripts\scriptLoader.js" />
+    <Content Include="style\swaStyle.css" />
+    <Content Include="views\page1\page1.html" />
+    <Content Include="views\page2\page2.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NSimpleWebAppHttpHandler\NSimpleWebAppHttpHandler.csproj">
-      <Project>{5e74bf45-e750-4f34-a189-6b2846d21a0f}</Project>
-      <Name>NSimpleWebAppHttpHandler</Name>
+    <ProjectReference Include="..\IssueModule\IssueModule.csproj">
+      <Project>{010dd05d-4134-4e75-95cb-4e424d6cc3b9}</Project>
+      <Name>IssueModule</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
