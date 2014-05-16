@@ -1,4 +1,5 @@
-﻿using IssueModule.API.Core;
+﻿using System.Web;
+using IssueModule.API.Core;
 using IssueModule.API.Engine;
 using IssueModule.WebAPI;
 using IssueModule.WebAPI.IO;
@@ -10,10 +11,13 @@ namespace IssueModule.HttpHandler
 	public class IssueHttpHandler
 	{
 		[SWAModuleMethod("GetIssue")]	
-		public Issue GetIssue(GetIssueInput input)
+		public GetIssueOutput GetIssue(GetIssueInput input)
 		{
 			IssueEngine engine = new IssueEngine();
-			return engine.GetIssue(input.IssueId, SessionHandler.SiteUser);
+			Issue issue = engine.GetIssue(input.IssueId, SessionHandler.SiteUser);
+			return issue == null ? new GetIssueOutput{Success = false} : new GetIssueOutput {Success = true, Issue = issue};
 		}
+
+
 	}
 }

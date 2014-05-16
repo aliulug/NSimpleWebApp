@@ -37,6 +37,7 @@ namespace NSimpleWebAppHttpHandler
 		{
 			try
 			{
+				//TODO: CETİN PARAMETRESİZ
 				ParameterInfo[] metodParametreleri = handlerBilgi.Metod.GetParameters();
 				string requestJson = new StreamReader(context.Request.InputStream).ReadToEnd();
 				List<object> parametreler = new List<object> { JsonConvert.DeserializeObject(requestJson,  metodParametreleri[0].ParameterType)};
